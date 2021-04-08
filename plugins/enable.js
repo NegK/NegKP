@@ -22,9 +22,12 @@ let handler = async (m, { conn, usedPrefix, command, text, args, isROwner }) => 
     case 'antilink':
       chat.antiLink = isEnable
       break
+    case 'autolevelup':
+      user.autolevelup = isEnable
+      break
     default:
       return m.reply(`
-Lista de opciones: welcome | delete | public | antilink
+List option: welcome | delete | public | antilink | autolevelup
 
 Contoh:
 ${usedPrefix}enable welcome
@@ -36,7 +39,7 @@ ${usedPrefix}disable welcome
 `.trim())
 }
 handler.help = ['en', 'dis'].map(v => v + 'able <opcion>')
-handler.tags = ['grupo', 'owner']
+handler.tags = ['group', 'owner']
 handler.command = /^((en|dis)able|(tru|fals)e|(turn)?o(n|ff))$/i
 
 module.exports = handler
