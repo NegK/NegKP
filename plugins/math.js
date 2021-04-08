@@ -3,13 +3,13 @@ let handler  = async (m, { conn, args, usedPrefix }) => {
   if (args.length < 1) return conn.reply(m.chat, `
 Mode: ${Object.keys(modes).join(' | ')}
 
-Contoh penggunaan: ${usedPrefix}math medium
+Ejemplos de uso: ${usedPrefix} math medium
 `.trim(), m)
   let mode = args[0].toLowerCase()
   if (!(mode in modes)) return conn.reply(m.chat, `
 Mode: ${Object.keys(modes).join(' | ')}
 
-Contoh penggunaan: ${usedPrefix}math medium
+Ejemplos de uso: ${usedPrefix} math medium
 `.trim(), m)
   let id = m.chat
   if (id in global.math) return conn.reply(m.chat, 'Todavía hay preguntas sin respuesta en este chat', global.math[id][0])
