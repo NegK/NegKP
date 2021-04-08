@@ -1,8 +1,6 @@
 let util = require('util')
 let path = require('path')
 let { spawn } = require('child_process')
-
-// Font By MFarelS:V
 let fontPath = 'src/font/Zahraaa.ttf'
 let handler  = async (m, { conn, args }) => {
   let inputPath ='src/kertas/magernulis1.jpg'
@@ -11,7 +9,6 @@ let handler  = async (m, { conn, args }) => {
   let tgl = d.toLocaleDateString('id-Id')
   let hari = d.toLocaleDateString('id-Id', { weekday: 'long' })
   let teks = args.join` `
-  // conn.reply(m.chat, util.format({fontPath, inputPath, outputPath, tgl, hari, teks}), m)
   spawn('convert', [
     inputPath,
     '-font',
@@ -51,7 +48,7 @@ let handler  = async (m, { conn, args }) => {
   ])
   .on('error', e => conn.reply(m.chat, util.format(e), m))
   .on('exit', () => {
-    conn.sendFile(m.chat, outputPath, 'nulis.jpg', 'Hati² ketahuan:v', m)
+    conn.sendFile(m.chat, outputPath, 'nulis.jpg', ' ', m)
   })
 }
 handler.help = ['n'].map(v => v + 'ulis <teks>')
@@ -62,13 +59,7 @@ handler.mods = false
 handler.premium = false
 handler.group = false
 handler.private = false
-
 handler.admin = false
 handler.botAdmin = false
-
 handler.fail = null
-
 module.exports = handler
-
-// BY MFARELS NJEENK
-// https://GitHub.com/MFarelS/
