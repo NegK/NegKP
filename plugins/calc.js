@@ -31,7 +31,7 @@ let handler = async (m, { conn, text }) => {
   }
 }
 handler.help = ['calc <expresión>']
-handler.tags = ['herramientas']
+handler.tags = ['tools']
 handler.command = /^(calc(ulat(e|or))?|kalk(ulator)?)$/i
 handler.exp = 5
 
