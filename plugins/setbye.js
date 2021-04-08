@@ -7,7 +7,7 @@ let handler = async (m, { conn, text, isROwner, isOwner }) => {
   } else throw 'Teksnya mana?'
 }
 handler.help = ['setbye <texto>']
-handler.tags = ['owner', 'grupo']
+handler.tags = ['owner', 'group']
 
 handler.command = /^setbye$/i
 module.exports = handler
