@@ -3,23 +3,23 @@ let handler  = async (m, { conn, command, text }) => {
   if (type == '') {
     if (text) {
       conn.menu = text
-      conn.reply(m.chat, 'Menu berhasil diatur\n' + info, m)
+      conn.reply(m.chat, 'Menú configurado correctamenten' + info, m)
     } else {
       conn.menu = {}
-      conn.reply(m.chat, 'Menu direset', m)
+      conn.reply(m.chat, 'Menu restablecido', m)
     }
   } else {
-    conn.menu = typeof conn.menu == 'object' ? conn.menu : {}
+    conn.menu = typeof conn.menu == 'objeto' ? conn.menu : {}
     if (text) {
       conn.menu[type] = text
-      conn.reply(m.chat, 'Menu ' + type + ' berhasil diatur\n' + info, m)
+      conn.reply(m.chat, 'Menu ' + type + ' establecer con éxito' + info, m)
     } else {
       delete conn.menu[type]
-      conn.reply(m.chat, 'Menu ' + type + ' direset', m)
+      conn.reply(m.chat, 'Menu ' + type + ' restablecimiento', m)
     }
   }
 }
-handler.help = ['', 'before','header','body','footer','after'].map(v => 'setmenu' + v + ' <teks>')
+handler.help = ['', 'before','header','body','footer','after'].map(v => 'setmenu' + v + ' <texto>')
 handler.tags = ['owner']
 handler.command = /^set(menu|help|\?)(before|header|body|footer|after)?$/i
 handler.owner = true
