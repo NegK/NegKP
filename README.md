@@ -81,8 +81,8 @@ No bot, just print received messages and add users to database
 
 #### Funciona mediante : [`XTEAM`](https://api.xteam.xyz)
 
-#### Creador : [`Nurutomo`](https://GitHub.com/Nurutomo)
+### Creador : [`Nurutomo`](https://GitHub.com/Nurutomo)
 
 ## Marca de agua por: [`DrawlNag`](https://youtube.com/c/DrawlNag)
 
-# Reescrito al español : [`NegK`](https://github.com/NegK)
+## Reescrito al español : [`NegK`](https://github.com/NegK)
