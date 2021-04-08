@@ -79,8 +79,10 @@ No bot, just print received messages and add users to database
 
 ---------
 
-#### Powered By : [`XTEAM`](https://api.xteam.xyz)
+#### Funciona mediante : [`XTEAM`](https://api.xteam.xyz)
 
-#### Author / Creator : [`Nurutomo`](https://GitHub.com/Nurutomo)
+#### Creador : [`Nurutomo`](https://GitHub.com/Nurutomo)
 
-## Watermark By: [`DrawlNag`](https://youtube.com/c/DrawlNag)
+## Marca de agua por: [`DrawlNag`](https://youtube.com/c/DrawlNag)
+
+# Reescrito al español : [`NegK`](https://github.com/NegK)
