@@ -13,7 +13,8 @@ let handler = async (m, { conn, command, text, isPrems, isOwner }) => {
   conn.sendFile(m.chat, thumb, 'thumbnail.jpg', `
 *Title:* ${title}
 *Filesize:* ${filesizeF}
-*${isLimit ? 'Pontelo ': ''}Link:* ${dl_link}
+*Source:* ${vid.url}
+*${isLimit ? 'Pakai ': ''}Link:* ${dl_link}
 `.trim(), m)
   let _thumb = {}
   try { if (isVideo) _thumb = { thumbnail: await (await fetch(thumb)).buffer() } }
@@ -21,14 +22,14 @@ let handler = async (m, { conn, command, text, isPrems, isOwner }) => {
   if (!isLimit) conn.sendFile(m.chat, dl_link, title + '.mp' + (3 + /2$/.test(command)), `
 *Title:* ${title}
 *Filesize:* ${filesizeF}
+*Source:* ${vid.url}
 `.trim(), m, false, _thumb || {})
 }
-handler.help = ['play', 'play2'].map(v => v + ' <buscar>')
-handler.tags = ['descargas']
+handler.help = ['play', 'play2'].map(v => v + ' <busqueda>')
+handler.tags = ['downloader']
 handler.command = /^play2?$/i
 
 handler.exp = 0
 handler.limit = true
 
 module.exports = handler
-
