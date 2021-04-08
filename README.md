@@ -10,8 +10,8 @@ Simple WhatsApp Bot
 > pkg install nodejs -y
 > pkg install ffmpeg -y
 > pkg install imagemagick -y
-> git clone https://github.com/Arya274/wabot-aq
-> cd wabot-aq
+> git clone https://github.com/NegK/NegK-Test
+> cd NegK-Test
 > npm install
 ```
 
