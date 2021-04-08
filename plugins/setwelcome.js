@@ -7,7 +7,7 @@ let handler = async (m, { conn, text, isROwner, isOwner }) => {
   } else throw '¿Qué texto?'
 }
 handler.help = ['setwelcome <texto>']
-handler.tags = ['owner', 'grupo']
+handler.tags = ['owner', 'group']
 
 handler.command = /^setwelcome$/i
 module.exports = handler
