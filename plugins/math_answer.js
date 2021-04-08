@@ -15,7 +15,7 @@ let handler = async (m, { conn }) => {
       conn.reply(m.chat, `*¡Se acabaron las posibilidades!*\nrespuesta: *${math.result}*`, m)
       clearTimeout(global.math[id][3])
       delete global.math[id]
-    } else conn.reply(m.chat, `*Respuesta incorrecta!* Todavía hay ${global.math[id][2]} oportunidades`, m)
+    } else conn.reply(m.chat, `*Respuesta incorrecta!*\nTodavía hay ${global.math[id][2]} oportunidades`, m)
   }
  }
 }
