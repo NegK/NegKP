@@ -18,13 +18,13 @@ Ejemplos de uso: ${usedPrefix} math medium
     await conn.reply(m.chat, `¿Cuál es el resultado de *${math.str}*?\n\nTiempo fuera: ${(math.time / 1000).toFixed(2)} sobras\nBonus respuesta correcta: ${math.bonus} XP`, m),
     math, 4,
     setTimeout(() => {
-      if (global.math[id]) conn.reply(m.chat, `Tiempo de espera! La respuesta es ${math.result}`, global.math[id][0])
+      if (global.math[id]) conn.reply(m.chat, `Tiempo de espera!\nLa respuesta es ${math.result}`, global.math[id][0])
       delete global.math[id]
     }, math.time)
   ]
 }
 handler.help = ['math <mode>']
-handler.tags = ['juego']
+handler.tags = ['game']
 handler.command = /^math/i
 
 module.exports = handler
