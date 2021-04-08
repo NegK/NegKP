@@ -42,12 +42,12 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
       'kerang': 'Kerang Ajaib',
       'quotes': 'Quotes',
       'admin': 'Admin',
-      'group': 'Group',
+      'grupo': 'Grupo',
       'premium': 'Premium',
       'internet': 'Internet',
       'nulis': 'MagerNulis & Logo',
-      'downloader': 'Downloader',
-      'tools': 'Tools',
+      'descargas': 'Descargas',
+      'herramientas': 'Herramientas',
       'fun': 'Fun',
       'jadibot': 'Jadi Bot',
       'owner': 'Owner',
@@ -68,17 +68,17 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
         limit: plugin.limit
       }
     })
-    let groups = {}
+    let grupos = {}
     for (let tag in tags) {
-      groups[tag] = []
+      grupos[tag] = []
       for (let menu of help)
         if (menu.tags && menu.tags.includes(tag))
-          if (menu.help) groups[tag].push(menu)
+          if (menu.help) grupos[tag].push(menu)
     }
     conn.menu = conn.menu ? conn.menu : {}
     let before = conn.menu.before || `
 ╭─「 ${conn.user.name} 」
-│ Hai, %name!
+│ Hola, %name!
 │
 │ Tersisa *%limit Limit*
 │ Level *%level (%exp / %maxexp)* [%xp4levelup lagi untuk levelup]
@@ -88,9 +88,6 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
 │ Waktu: *%time*
 │
 │ Uptime: *%uptime (%muptime)*
-│ Database: %rtotalreg of %totalreg
-│ Github:
-│ %github
 ╰────
 %readmore`
     let header = conn.menu.header || '╭─「 %category 」'
