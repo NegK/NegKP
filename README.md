@@ -74,7 +74,7 @@ Sin bot, simplemente imprima mensajes recibidos y agregue usuarios a la base de 
 
 ### `--test`
 
-**Development** Modo de prueba
+**Desarrollo** Modo de prueba
 
 ---------
 
