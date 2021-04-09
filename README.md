@@ -18,10 +18,10 @@ Simple WhatsApp Bot
 
 ## Para usuarios de WINDOWS/VPS/RDP
 
-* Descargar e instalar Git [`Click Here`](https://git-scm.com/downloads)
-* Descargar e instalar NodeJS [`Click Here`](https://nodejs.org/en/download)
-* Descargar e instalar FFMPEG [`Click Here`](https://ffmpeg.org/download.html) (no olvide el path)
-* Descargar e instalar ImageMagick [`Click Here`](https://imagemagick.org/script/download.php) (por si gustas que nulis trabaje, lista de verificacion 1,2,3,5,6)
+* Descargar e instalar Git [`Click aqui`](https://git-scm.com/downloads)
+* Descargar e instalar NodeJS [`Click aqui`](https://nodejs.org/en/download)
+* Descargar e instalar FFMPEG [`Click aqui`](https://ffmpeg.org/download.html) (no olvide el path)
+* Descargar e instalar ImageMagick [`Click aqui`](https://imagemagick.org/script/download.php) (por si gustas que nulis trabaje, lista de verificacion 1,2,3,5,6)
 
 ```bash
 > git clone https://github.com/NegK/NegK-Test
@@ -47,7 +47,7 @@ Activar modo automático (ignora a otros)
 
 ### `--prefix <prefijos>`
 
-*Los 'prefijos' son seperados por cada carácter
+Los 'prefijos' son seperados por cada carácter
 Establecer prefijo
 
 ### `--server`
