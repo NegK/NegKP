@@ -2,7 +2,7 @@
 
 Simple WhatsApp Bot
 
-## FOR TERMUX USER
+## Para usuarios de Termux
 
 ```bash
 > pkg update && pkg upgrade
@@ -17,16 +17,16 @@ Simple WhatsApp Bot
 
 ---------
 
-## FOR WINDOWS/VPS/RDP USER
+## Para usuarios de WINDOWS/VPS/RDP
 
 * Download And Install Git [`Click Here`](https://git-scm.com/downloads)
 * Download And Install NodeJS [`Click Here`](https://nodejs.org/en/download)
-* Download And Install FFMPEG [`Click Here`](https://ffmpeg.org/download.html) (don't forget to path)
-* Download And Install ImageMagick [`Click Here`](https://imagemagick.org/script/download.php) (if nulis want work,  checklist columns 1,2,3,5,6)
+* Download And Install FFMPEG [`Click Here`](https://ffmpeg.org/download.html) (no olvide el path)
+* Download And Install ImageMagick [`Click Here`](https://imagemagick.org/script/download.php) (por si gustas que nulis trabaje, lista de verificacion 1,2,3,5,6)
 
 ```bash
-> git clone https://github.com/Arya274/wabot-aq
-> cd wabot-aq
+> git clone https://github.com/NegK/NegK-Test
+> cd NegK-Test
 > npm install
 ```
 
@@ -35,47 +35,47 @@ Simple WhatsApp Bot
 ## Run
 
 ```bash
-> node . [<session name>] (session name is optional)
+> node . [<nombre de sesion>] (el nombre de sesion es opcional)
 ```
 
 ---------
 
-## Arguments `node . [--options] [<session name>]`
+## Argumentos `node . [--opcion] [<nombre de sesion>]`
 
 ### `--self`
 
-Activate self mode (Ignores other)
+Activar modo automático (ignora a otros)
 
-### `--prefix <prefixes>`
+### `--prefix <prefijos>`
 
-* `prefixes` are seperated by each character
-Set prefix
+*Los 'prefijos' son seperados por cada carácter
+Establecer prefijo
 
 ### `--server`
 
-Used for [heroku](https://heroku.com/) or scan through website
+Se utiliza para [heroku](https://heroku.com/) o escanear a través del sitio web
 
 ### `--big-qr`
 
-If small qr unicode doesn't support
+Por si el pequeño QR no es compatible
 
 ### `--restrict`
 
-Enables restricted plugins (which can lead your number to be **banned** if used too often)
+Permite plugins restringidos (pueden llevarlo hacer que su numero sea **prohibido** si se utiliza con demasiada frecuencia)
 
-* Group Administration `add, kick`
+* Administracion de grupo `add, kick`
 
 ### `--img`
 
-Enable image inspector through terminal
+Habilitar inspector de imágenes a través del terminal
 
 ### `--nyimak`
 
-No bot, just print received messages and add users to database
+Sin bot, simplemente imprima mensajes recibidos y agregue usuarios a la base de datos
 
 ### `--test`
 
-**Development** Testing Mode
+**Development** Modo de prueba
 
 ---------
 
