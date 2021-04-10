@@ -4,11 +4,11 @@ let handler = async (m, { conn, text, isROwner, isOwner }) => {
     else if (isOwner) conn.bye = text
     else global.DATABASE._data.chats.sBye = text
     m.reply('Depedida exitosa\n@user (Mencion)')
-  } else throw 'Teksnya mana?'
+  } else throw '¿Qué texto?'
 }
 handler.help = ['setbye <texto>']
 handler.tags = ['owner', 'group']
-
+handler.rowner = true
 handler.command = /^setbye$/i
 module.exports = handler
 
