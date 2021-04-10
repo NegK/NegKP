@@ -12,8 +12,8 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.packname = 'I hope you\'Subscribe'
-global.author = 'Drawl Nag'
+global.packname = ''
+global.author = 'Empresa Maurisios'
 
 global.multiplier = 69 // The higher, The harder levelup
 
