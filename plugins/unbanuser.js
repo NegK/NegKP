@@ -1,6 +1,6 @@
 let { MessageType } = require('@adiwajshing/baileys')
 let handler = async (m, { conn, text}) => {
-    if (!text) throw 'A quien habilitaras'
+    if (!text) throw 'A quien piensas habilitar?'
     let who
     if (m.isGroup) who = m.mentionedJid[0]
     else who = m.chat
