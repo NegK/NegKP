@@ -207,7 +207,7 @@ module.exports = {
             }
           } finally {
             // m.reply(util.format(_user)) 
-            if (m.limit) m.reply(+ m.limit + ' Limit terpakai')
+            if (m.limit) m.reply(+ m.limit + ' Límite utilizado')
           }
     			break
   	  	}
@@ -261,7 +261,7 @@ module.exports = {
         pp = await this.getProfilePicture(user)
       } catch (e) {
       } finally {
-        let text = (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@user', '@' + user.split('@')[0]).replace('@subject', this.getName(m.key.remoteJid))
+        let text = (chat.sWelcome || this.welcome || conn.welcome || 'Bienvenido, @user!').replace('@user', '@' + user.split('@')[0]).replace('@subject', this.getName(m.key.remoteJid))
         this.sendFile(m.key.remoteJid, pp, 'pp.jpg', text, m, false, {
           contextInfo: {
             mentionedJid: [user]
@@ -280,7 +280,7 @@ module.exports = {
         pp = await this.getProfilePicture(user)
       } catch (e) {
       } finally {
-        let text = (chat.sBye || this.bye || conn.bye || 'Bye, @user!').replace('@user', '@' + user.split('@')[0])
+        let text = (chat.sBye || this.bye || conn.bye || 'Hasta luego, @user!').replace('@user', '@' + user.split('@')[0])
         this.sendFile(m.key.remoteJid, pp, 'pp.jpg', text, m, false, {
           contextInfo: {
             mentionedJid: [user]
@@ -296,7 +296,7 @@ module.exports = {
     await this.reply(m.key.remoteJid, `
 Terdeteksi @${m.participant.split`@`[0]} telah menghapus pesan
 
-Untuk mematikan fitur ini, ketik
+Para desactivar esta función, escriba:
 *.enable delete*
 `.trim(), m.message, {
       contextInfo: {
@@ -309,15 +309,15 @@ Untuk mematikan fitur ini, ketik
 
 global.dfail = (type, m, conn) => {
   let msg = {
-    rowner: 'Perintah ini hanya dapat digunakan oleh _*OWNER DRAWL NAG*_!',
-    owner: 'Perintah ini hanya dapat digunakan oleh _*Owner Bot*_!',
-    mods: 'Perintah ini hanya dapat digunakan oleh _*Moderator*_ !',
-    premium: 'Perintah ini hanya untuk member _*Premium*_ !',
-    group: 'Perintah ini hanya dapat digunakan di grup!',
-    private: 'Perintah ini hanya dapat digunakan di Chat Pribadi!',
-    admin: 'Perintah ini hanya untuk *Admin* grup!',
-    botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini!',
-    unreg: '*Maaf kak, kamu belum Terdaftar!*\nSilahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama|umur*\n\nContoh: *#daftar Arya|16*'
+    rowner: 'Este comando solo puede ser utilizado por el _*OWNER/DUEÑO*_!',
+    owner: 'Este comando solo puede ser utilizado por el _*OWNER/DUEÑO*_!',
+    mods: 'Este comando solo puede ser utilizado por _*MODERADORES*_!',
+    premium: '¡Este comando es solo para miembros _*Premium*_!',
+    group: '¡Este comando solo se puede utilizar en grupos!',
+    private: '¡Este comando solo se puede utilizar en el chat privado!',
+    admin: '¡Este comando es solo para los *Admins*!',
+    botAdmin: '¡Haz el bot *Admin* para usar este comando!',
+    unreg: '*Lo sentimos, esta funcion no ha sido registrada por el momento*'
   }[type]
   if (msg) return m.reply(msg)
 }
