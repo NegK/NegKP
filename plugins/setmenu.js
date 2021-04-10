@@ -38,29 +38,24 @@ module.exports = handler
 let info = `
 Universal:
 %% (%)
-%p (Prefix)
-%exp (Current Exp)
-$maxexp (Exp To Level Up)
+%p (Prefijo)
+%exp (Exp actual)
+$maxexp (Exp para subir de nivel)
 %totalexp (Total Exp)
-%xp4levelup (Exp yang dibutuhkan untuk levelup)
-%limit (Limit)
-%name (Nama)
-%weton (Weton Hari ini)
-%week (Hari)
-%date (Tanggal)
-%time (Jam)
-%uptime (Uptime Bot)
-%rtotalreg (Jumlah User yang daftar di database)
-%totalreg (Jumlah User yang ada di database)
-%npmname
-%npmdesc
-%version
-%github
+%xp4levelup (Exp requerido para la nivelación)
+%limit (Limite)
+%name (Nombre)
+%week (Dia)
+%date (Fecha)
+%time (Hora)
+%uptime (Tiempo de actividad del bot)
+%rtotalreg (Número de usuarios enumerados en la base de datos)
+%totalreg (Número de usuarios en la base de datos)
 
-Bagian Menu Header & Footer:
-%category (Kategori)
+Sección de menú encabezado y pie de página:
+%category (Categoría)
 
-Bagian Menu Body:
-%cmd (Command)
-%islimit (Jika command di limit)
+Sección del cuerpo del menú:
+%cmd (Comando a realizar)
+%islimit (Si el comando es...)
 `.trim()
