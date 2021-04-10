@@ -1,7 +1,7 @@
 {
   "name": "NegK-Test",
   "version": "1.0.0",
-  "description": "Customizable WhatsApp Bot",
+  "description": "WhatsApp Bot",
   "depecrated": false,
   "main": "index.js",
   "directories": {
