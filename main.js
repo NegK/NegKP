@@ -51,10 +51,10 @@ conn.on('credentials-updated', () => fs.writeFileSync(authFile, JSON.stringify(c
 let lastJSON = JSON.stringify(global.DATABASE.data)
 if (!opts['test']) setInterval(() => {
   conn.logger.info('Saving database . . .')
-  if (JSON.stringify(global.DATABASE.data) == lastJSON) conn.logger.info('Database is up to date')
+  if (JSON.stringify(global.DATABASE.data) == lastJSON) conn.logger.info('La base de datos está actualizada')
   else {
     global.DATABASE.save()
-    conn.logger.info('Done saving database!')
+    conn.logger.info('¡He terminado de guardar la base de datos!')
     lastJSON = JSON.stringify(global.DATABASE.data)
   }
 }, 60 * 1000) // Save every minute
@@ -115,8 +115,8 @@ global.reloadHandler = function () {
     conn.off('group-add', conn.onAdd)
     conn.off('group-leave', conn.onLeave)
   }
-  conn.welcome = 'Hai, @user!\nSelamat datang di grup @subject'
-  conn.bye = 'Selamat tinggal @user!'
+  conn.welcome = 'Hola, @user!\nBienvenido al grupo @subject'
+  conn.bye = 'Hasta luego @user'
   conn.handler = handler.handler
   conn.onAdd = handler.welcome
   conn.onLeave = handler.leave
@@ -196,7 +196,7 @@ global.support = {
 }
 Object.freeze(global.support)
 
-if (!global.support.ffmpeg) conn.logger.warn('Please install ffmpeg for sending videos (pkg install ffmpeg)')
-if (!global.support.ffmpegWebp) conn.logger.warn('Stickers may not animated without libwebp on ffmpeg (--emable-ibwebp while compiling ffmpeg)')
-if (!global.support.convert) conn.logger.warn('Stickers may not work without imagemagick if libwebp on ffmpeg doesnt isntalled (pkg install imagemagick)')
+if (!global.support.ffmpeg) conn.logger.warn('Por favor, instale ffmpeg para enviar videos (pkg install ffmpeg)')
+if (!global.support.ffmpegWebp) conn.logger.warn('Los Stickers no pueden animarse sin libwebp en ffmpeg (--emable-ibwebp mientras compila ffmpeg)')
+if (!global.support.convert) conn.logger.warn('Lo Stickers pueden que no funcionen sin imagemagick si libwebp en ffmpeg no está (pkg install imagemagick)')
 
