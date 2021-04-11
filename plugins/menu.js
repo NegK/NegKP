@@ -85,14 +85,21 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
 │ Limite *%limit Limit*
 │ Nivel *%level (%exp / %maxexp)*
 │ %totalexp XP en Total
-│ 
-│ Fecha: *%week %weton, %date*
+│ Fecha: *%date*
 │ Hora: *%time*
-│
 │ Database: %rtotalreg de %totalreg
+│
+│ • Recién hemos actualizado el servicio, debido a esto se puede explicar el porqué de las casillas vacías. Además, dejamos nuestro contacto de PayPal por si gustan apoyarnos para futuras actualizaciones y recibir un agradecimiento de su parte, de antemano, gracias :)
+│
+│ https://www.paypal.me/guinz00
+│
+│ • Donaciones: 
+│ Arturo TC         0.5$
+│ Mauricio O       0.5$
+│
 ▲━━━━━ஜ۩۞۩ஜ━━━━━▲
 %readmore`
-    let header = conn.menu.header || '  ❮ %category ❯ '
+    let header = conn.menu.header || '  *~❮ %category ❯~* '
     let body   = conn.menu.body   || '  [ • %cmd%islimit ]'
     let footer = conn.menu.footer || '\n'
     let after  = conn.menu.after  || (conn.user.jid == global.conn.user.jid ? '' : `Powered by https://wa.me/${global.conn.user.jid.split`@`[0]}`) + `\n*%npmname@^%version*\n\`\`\`\%npmdesc\`\`\``
