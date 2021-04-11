@@ -77,25 +77,24 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
     }
     conn.menu = conn.menu ? conn.menu : {}
     let before = conn.menu.before || `
-╭─「 ${conn.user.name} 」
-│ Hai, %name!
+◤━━━━━ஜ۩۞۩ஜ━━━━━◥
+│              ❮ 𝐌ͥ𝐀ͣ͢𝐔ͫ𝐑𝐈₂ⷦ₀ͥ₂₁⸸ ❯
 │
-│ Tersisa *%limit Limit*
-│ Level *%level (%exp / %maxexp)* [%xp4levelup lagi untuk levelup]
-│ %totalexp XP in Total
+│ Hola, %name!
+│
+│ Limite *%limit Limit*
+│ Nivel *%level (%exp / %maxexp)*
+│ %totalexp XP en Total
 │ 
-│ Tanggal: *%week %weton, %date*
-│ Waktu: *%time*
+│ Fecha: *%week %weton, %date*
+│ Hora: *%time*
 │
-│ Uptime: *%uptime (%muptime)*
-│ Database: %rtotalreg of %totalreg
-│ Github:
-│ %github
-╰────
+│ Database: %rtotalreg de %totalreg
+▲━━━━━ஜ۩۞۩ஜ━━━━━▲
 %readmore`
-    let header = conn.menu.header || '╭─「 %category 」'
-    let body   = conn.menu.body   || '│ • %cmd%islimit'
-    let footer = conn.menu.footer || '╰────\n'
+    let header = conn.menu.header || '  ❮ %category ❯ '
+    let body   = conn.menu.body   || '  [ • %cmd%islimit ]'
+    let footer = conn.menu.footer || '\n'
     let after  = conn.menu.after  || (conn.user.jid == global.conn.user.jid ? '' : `Powered by https://wa.me/${global.conn.user.jid.split`@`[0]}`) + `\n*%npmname@^%version*\n\`\`\`\%npmdesc\`\`\``
     let _text  = before + '\n'
     for (let tag in groups) {
@@ -125,7 +124,7 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
     text = text.replace(new RegExp(`%(${Object.keys(replace).join`|`})`, 'g'), (_, name) => ''+replace[name])
     conn.reply(m.chat, text.trim(), m)
   } catch (e) {
-    conn.reply(m.chat, 'Maaf, menu sedang error', m)
+    conn.reply(m.chat, 'Lo sentimos, el menú se está bloqueando.', m)
     throw e
   }
 }
