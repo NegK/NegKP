@@ -1,7 +1,7 @@
 {
-  "name": "◤━━━━━ஜ۩۞۩ஜ━━━━━◥ \nEl bot es parcialmente gratuito, mantenemos reseñas positivas y realmente buscamos ayudar e incluso hacer tareas de una manera mas sencilla y cómoda para el usuario. Nuestro sistema mantiene una capacidad estándar, no contamos con recursos necesarios para compilar tanta información ya sea por exceso de pedidos en un mismo instante o falta de almacenamiento, monitoreamos la velocidad y compilado del bot día con día para mejorar el servicio, con ello seria de gran ayuda recibir un poco de apoyo para ayudar a la experiencia de todos los usuarios :) \nhttps://www.paypal.me/guinz00 \n▲━━━━━ஜ۩۞۩ஜ━━━━━▲",
-  "version": "\n",
-  "description": "◤━━━━━ஜ۩۞۩ஜ━━━━━◥ \nReiteramos que el bot es gratuito, sin embargo, tuvimos que definir una hora limite sobre el uso del bot, esto por falta de capacidad de almacenamiento :/ por lo tanto dejamos una lista de agradecimiento y reconocimiento a quienes nos han apoyado \nArturo TC $0.5 \nMauricio $0.5 \n▲━━━━━ஜ۩۞۩ஜ━━━━━▲",
+  "name": "",
+  "version": "1.0.0",
+  "description": "◤━━━━━ஜ۩۞۩ஜ━━━━━◥ \nEl bot es parcialmente gratuito, mantenemos reseñas positivas y realmente buscamos ayudar e incluso hacer tareas de una manera mas sencilla y cómoda para el usuario. Nuestro sistema mantiene una capacidad estándar, no contamos con recursos necesarios para compilar tanta información ya sea por exceso de pedidos en un mismo instante o falta de almacenamiento, monitoreamos la velocidad y compilado del bot día con día para mejorar el servicio, con ello seria de gran ayuda recibir un poco de apoyo para ayudar a la experiencia de todos los usuarios :) \nhttps://www.paypal.me/guinz00 \n▲━━━━━ஜ۩۞۩ஜ━━━━━▲ \n◤━━━━━ஜ۩۞۩ஜ━━━━━◥ \nReiteramos que el bot es gratuito, sin embargo, tuvimos que definir una hora limite sobre el uso del bot, esto por falta de capacidad de almacenamiento :/ por lo tanto dejamos una lista de agradecimiento y reconocimiento a quienes nos han apoyado \nArturo TC $0.5 \nMauricio $0.5 \n▲━━━━━ஜ۩۞۩ஜ━━━━━▲",
   "depecrated": false,
   "main": "index.js",
   "directories": {
