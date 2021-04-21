@@ -36,25 +36,19 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
     let totalreg = Object.keys(global.DATABASE._data.users).length
     let rtotalreg = Object.values(global.DATABASE._data.users).filter(user => user.registered == true).length
     let tags = {
-      'main': 'Main',
+      'menu': 'Menu',
       'xp': 'Exp & Limit',
       'sticker': 'Sticker',
-      'kerang': 'Kerang Ajaib',
       'citas': 'Citas',
-      'admin': 'Admin',
       'group': 'Group',
       'premium': 'Premium',
       'internet': 'Internet',
       'nulis': 'MagerNulis & Logo',
       'downloader': 'Downloader',
       'tools': 'Tools',
-      'fun': 'Fun',
-      'jadibot': 'Jadi Bot',
       'owner': 'Owner',
-      'host': 'Host',
-      'advanced': 'Advanced',
       'info': 'Info',
-      '': 'No Category',
+      '': 'Proximamente...',
     }
     for (let plugin of Object.values(global.plugins))
       if (plugin && 'tags' in plugin)
@@ -136,7 +130,7 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
   }
 }
 handler.help = ['menu','help','?']
-handler.tags = ['main']
+handler.tags = ['menu']
 handler.command = /^(menu|help|\?)$/i
 handler.owner = false
 handler.mods = false
