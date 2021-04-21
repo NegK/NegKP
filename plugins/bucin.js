@@ -1,9 +1,9 @@
 let handler  = async (m, { conn }) => {
-  conn.reply(m.chat,`“${pickRandom(global.bucin)}”`, m)
+  conn.reply(m.chat,`“${pickRandom(global.citas)}”`, m)
 }
-handler.help = ['bucin']
-handler.tags = ['quotes']
-handler.command = /^(bucin)$/i
+handler.help = ['citas']
+handler.tags = ['citas']
+handler.command = /^(citas)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
@@ -21,7 +21,7 @@ function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())]
 }
 
-global.bucin = [
+global.citas = [
   "Tienes que perdonar a mi corazón. Solo piensa en amarte.",
   "Parece mentira, tantas personas en el mundo y con la única persona que quiero estar es junto a ti.",
   "Si tuviese la suerte de ser el mar y tú una roca, lo que más desearía es que subiese la marea para besar tu boca.",
