@@ -83,7 +83,7 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
 │ Hora: *%time*
 │ Database: %rtotalreg de %totalreg
 │
-│ • Recién hemos actualizado el servicio, debido a esto se puede explicar el porqué de las casillas vacías. Además, dejamos nuestro contacto de PayPal por si gustan apoyarnos para futuras actualizaciones y recibir un agradecimiento de su parte, de antemano, gracias :)
+│ • Dejamos nuestro contacto de PayPal por si gustan apoyarnos para futuras actualizaciones y recibir un agradecimiento de su parte, de antemano, gracias :)
 │
 │ https://www.paypal.me/guinz00
 │
