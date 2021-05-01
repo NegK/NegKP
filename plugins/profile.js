@@ -24,6 +24,7 @@ Limite: ${limit}
 }
 handler.help = ['profile [@usuario]']
 handler.tags = ['tools']
+handler.group = true
 handler.command = /^profile$/i
 module.exports = handler
 
