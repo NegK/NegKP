@@ -313,7 +313,7 @@ global.dfail = (type, m, conn) => {
     owner: 'Este comando solo puede ser utilizado por el _*OWNER/DUEÑO*_!',
     mods: 'Este comando solo puede ser utilizado por _*MODERADORES*_!',
     premium: '¡Este comando es solo para miembros _*Premium*_!',
-    group: '¡Este comando solo se puede utilizar en grupos!',
+    group: 'El bot ha dejado de ser compatible para chat privado, trata de agregarlo a un grupo para utilizarlo y evita añadirnos a grupos familiares/escolares por seguridad.',
     private: '¡Este comando solo se puede utilizar en el chat privado!',
     admin: '¡Este comando es solo para los *Admins*!',
     botAdmin: '¡Haz el bot *Admin* para usar este comando!',
