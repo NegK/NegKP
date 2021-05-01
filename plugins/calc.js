@@ -4,7 +4,7 @@ let handler = async (m, { conn, text }) => {
   if (id in global.math) {
     clearTimeout(global.math[id][3])
     delete global.math[id]
-    m.reply('Hmmm...Los digitos?')
+    m.reply('Hmmm... Los digitos?')
   }
   let val = text
     .replace(/[^0-9\-\/+*×÷πEe()piPI/]/g, '')
@@ -34,5 +34,6 @@ handler.help = ['calc <expresión>']
 handler.tags = ['tools']
 handler.command = /^(calc(ulat(e|or))?|kalk(ulator)?)$/i
 handler.exp = 5
+handler.group = true
 
 module.exports = handler
