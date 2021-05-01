@@ -13,5 +13,6 @@ handler.help = ['ban']
 handler.tags = ['owner']
 handler.command = /^unban$/i
 handler.rowner = true
+handler.group = true
 
 module.exports = handler
