@@ -22,5 +22,6 @@ let handler = async (m, { conn }) => {
 handler.customPrefix = /^-?[0-9]+(\.[0-9]+)?$/
 handler.command = new RegExp
 handler.exp = 0
+handler.group = true
 
 module.exports = handler
