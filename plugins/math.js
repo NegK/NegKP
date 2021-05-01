@@ -26,7 +26,7 @@ Ejemplos de uso: ${usedPrefix} math medium
 handler.help = ['math <mode>']
 handler.tags = ['game']
 handler.command = /^math/i
-
+handler.group = true
 module.exports = handler
 
 let modes = {
