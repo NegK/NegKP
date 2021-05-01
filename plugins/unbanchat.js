@@ -6,5 +6,6 @@ handler.help = ['unbanchat']
 handler.tags = ['owner']
 handler.command = /^unbanchat$/i
 handler.owner = true
+handler.group = true
 
 module.exports = handler
