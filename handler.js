@@ -309,8 +309,8 @@ Para desactivar esta función, escriba:
 
 global.dfail = (type, m, conn) => {
   let msg = {
-    rowner: 'Este comando solo puede ser utilizado por el _*OWNER/DUEÑO*_!',
-    owner: 'Este comando solo puede ser utilizado por el _*OWNER/DUEÑO*_!',
+    rowner: 'Este comando solo puede ser utilizado por el _*OWNER DEL BOT*_!',
+    owner: 'Este comando solo puede ser utilizado por el _*OWNER DEL BOT*_!',
     mods: 'Este comando solo puede ser utilizado por _*MODERADORES*_!',
     premium: '¡Este comando es solo para miembros _*Premium*_!',
     group: 'El bot ha dejado de ser compatible para chat privado, trata de agregarlo a un grupo para utilizarlo y evita añadirnos a grupos familiares/escolares por seguridad.',
