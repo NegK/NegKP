@@ -18,8 +18,9 @@ let handler = async (m, { conn, text }) => {
   })
 }
 handler.command = /^(fitnah|fakereply)$/
-
+handler.group = true
 module.exports = handler
+
 
 function copy(obj) {
   return JSON.parse(JSON.stringify(obj))
