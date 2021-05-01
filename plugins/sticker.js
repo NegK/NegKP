@@ -19,6 +19,7 @@ let handler  = async (m, { conn, args }) => {
 }
 handler.help = ['stiker (pie de la imagen|etiqueta el multimedia)', 'stiker <url>', 'stikergif (pie de la imagen|etiqueta el multimedia)', 'stikergif <url>']
 handler.tags = ['sticker']
+handler.group = true
 handler.command = /^s(tic?ker)?(gif)?(wm)?$/i
 
 module.exports = handler
