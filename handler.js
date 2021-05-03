@@ -313,7 +313,7 @@ global.dfail = (type, m, conn) => {
     owner: 'Este comando solo puede ser utilizado por el _*OWNER DEL BOT*_!',
     mods: 'Este comando solo puede ser utilizado por _*MODERADORES*_!',
     premium: '¡Este comando es solo para miembros _*Premium*_!',
-    group: 'El bot ha dejado de ser compatible para chat privado, trata de agregarlo a un grupo para utilizarlo y evita añadirnos a grupos familiares/escolares por seguridad.',
+    group: 'El bot ha dejado de ser compatible para chat privado, trata de agregarlo a un grupo para utilizarlo. _*PD: el bot funciona única y exclusivamente cuyas personas nos apoyan mediante nuestro enlace de PayPal (https://www.paypal.me/guinz00) el precio mínimo llega de 2$ a 1$, estaremos al tanto del chat privado para confirmar y aclarar dudas al respecto, por favor, ser cordiales.*_',
     private: '¡Este comando solo se puede utilizar en el chat privado!',
     admin: '¡Este comando es solo para los *Admins*!',
     botAdmin: '¡Haz el bot *Admin* para usar este comando!',
