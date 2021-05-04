@@ -1,7 +1,7 @@
 let limit = 30
 const { servers, yta } = require('../lib/y2mate')
 let handler = async (m, { conn, args, isPrems, isOwner }) => {
-  if (!args || !args[0]) throw 'Uhm... urlnya mana?'
+  if (!args || !args[0]) throw 'Uhm... El URL?'
   let server = (args[1] || 'id4').toLowerCase()
   let { dl_link, thumb, title, filesize, filesizeF} = await yta(args[0], servers.includes(server) ? server : 'id4')
   let isLimit = (isPrems || isOwner ? 99 : limit) * 1024 < filesize
@@ -21,7 +21,7 @@ handler.command = /^yt(a|mp3)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
-handler.group = false
+handler.group = true
 handler.private = false
 
 handler.admin = false
