@@ -83,13 +83,9 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
 │ Hora: *%time*
 │ Database: %rtotalreg de %totalreg
 │
-│ • Dejamos nuestro contacto de PayPal por si gustan apoyarnos para futuras actualizaciones y recibir un agradecimiento de su parte, de antemano, gracias :)
+│ • Compra del bot (precio minimo de 2$ a 1$):
 │
 │ https://www.paypal.me/guinz00
-│
-│ • Donaciones: 
-│ Arturo TC         0.5$
-│ Mauricio O       0.5$
 │
 ▲━━━━━ஜ۩۞۩ஜ━━━━━▲
 %readmore`
